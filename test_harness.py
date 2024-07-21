@@ -32,7 +32,7 @@ class TicTacToeTests(unittest.TestCase):
         franks_doors.tic_tac_toe.try_process_local_command(host, "jane", None)
 
         # Our mock door host recorded what the door wanted to display to Jane.
-        # For the reall BBS, the host wuld receive a call to print_local function.
+        # For the real BBS, the host would receive a call to print_local function.
         self.assertEqual(host.local_output, "[C]reate new game\ne[X]it")
         # Behind the scenes it also attempted to load the door state for Jane, update it and then store it.
         # For the real host, you'd probably wire up these calls to load and store to a DB table with the sender "Jane" as one of the keys.
