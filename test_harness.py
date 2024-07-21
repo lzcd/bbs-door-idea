@@ -57,7 +57,7 @@ class TicTacToeTests(unittest.TestCase):
         self.assertEqual(host.remote_recipient, "bob")
         self.assertEqual(host.remote_command, "    X    ")
         
-        # When the message shows up at the remote location, BB@ would make a call like the following to its door
+        # When the message shows up at the remote location, BBS2 would make a call like the following to its door
         franks_doors.tic_tac_toe.try_process_local_command(host, "bob", "    X    ")
 
 
